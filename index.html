@@ -1,13 +1,28 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head>
-	<link rel="stylesheet" type="text/css" href="css.css">
     <title>Carpenter Web Builders</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./appcss.css">
 </head>
 <body>
-  <h1>Carpenter Web Builders</h1>
-  <h2>" Refresh your website to remain current and clarify your message."<br>Content Management, Maintenance, Mobile Development</h2>
-  
-  <p>This is the place where the magic happens!!!</p>
-  <p> I would not have thought that winning felt so good</p>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">My Pictures</a>
+    <div id="signOut"></div>
+  </nav>
+  <div class="hero-image">
+      <div class="hero-text">
+        <h1>Your PicturesNew Home</h1>
+        <p>@MyPictures</p>
+        <button type="button" onclick="getStarted()">'Get Started'</button>
+      </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
+  <script src="./node_modules/amazon-cognito-identity-js/dist/amazon-cognito-identity.min.js"></script>
+  <script src="./aws-sdk-2.696.0.min.js"></script>
+  <script type="module" src="./app.js"></script>
 </body>
 </html>
